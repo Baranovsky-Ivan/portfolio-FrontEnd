@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>Portfolio Ivan</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+
+<body>
+  <div class="card mat-card" id="first-card">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+          <img src="/imagenes/argprograma.jpg" >
+        </a>
+        <a class="nav-link disabled">
+          #YoProgramo
+        </a>  
+      </div>
+      <div class="d-flex justify-content-end">
+        <a class="nav-link active" aria-current="page" href="https://www.instagram.com/ivan.baranovsky/?hl=es-la">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="nav-link active" aria-current="page" href="https://www.facebook.com/ibaranovsky/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="nav-link active" aria-current="page" href="https://github.com/Baranovsky-Ivan">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <div class="btn-group dropstart">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </button>
+          <form class="dropdown-menu p-4">
+            <div class="mb-3">
+              <label for="Login-username-portfolio" class="form-label">username</label>
+              <input type="username" class="form-control" id="username-portfolio" placeholder="username">
+            </div>
+            <div class="mb-3">
+              <label for="Login-password-portfolio" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password-portfolio" placeholder="Password">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-light">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="card bg-dark text-white">
+      <img src="./imagenes/software-banner.jpg">
+      <div class="card-img-overlay">
+        <button href="#" class="btn btn-light" type="button"><i class="far fa-edit"></i>Edit Banner</button>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-secondary mb-3">
+    <div class="row profile-picture">
+      <div class="image-profile">
+        <img id="image-profile" src="/imagenes/Foto-perfil 1.jpg" alt="" class="border border-white border-3 rounded-circle" >
+        <div class="d-grid gap-2 d-md-block">
+          <button class="camera btn btn-black" type="button"><i class="fas fa-camera"></i></button>
+        </div>
+      </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-3">
+    <div class="col-md-6">
+      <div class="card text-center bg-secondary">
+        <h1>Iván Baranovsky</h1>
+        <h3>Full Stack Developer Jr</h3>
+        <div class="card-img-overlay">
+          <button id="btn-edit-personal" href="#" class="btn btn-light" type="button">
+            <i class="far fa-edit"></i>
+          </button>
+        </div>
+      </div>
+    </div> 
+    <div class="col-md-6">
+      <div class="card text-left bg-secondary ">
+        <p><h2>Informacion resumida</h2></p>
+        <h5>Recientemente termine el curso "YO PROGRAMO" de "ARGENTINA PROGRAMA" en el cual hice mis primeros pasos en la programacion. 
+          En estos momentos estoy desarrollando mis habilidades de forma autodidacta. 
+          <p>Tengo 27 años y vivo en la provincia de Santa Fe, Argentina.</p></h5>
+        <div class="card-img-overlay">
+          <button id="btn-info-resumida-quitar" href="#" class="btn btn-light" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button id="btn-info-resumida-agregar" href="#" class="btn btn-light" type="button">
+            <i class="far fa-edit"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <h2 class="card-title">Agregar o Eliminar Plantilla</h2>
+    <div class="card-img-overlay">
+      <button id="btn-eliminar-plantilla" href="#" class="btn btn-secundary" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="btn-agregar-plantilla" href="#" class="btn btn-secundary" type="button">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-12">
+        <h2 class="card-title">Educacion</h2>
+        <div class="card-img-overlay">
+          <button id="btn-agregar-educacion" href="#" class="btn btn-secundary" type="button">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="./imagenes/argentinaprograma2.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack Developer Jr</h5>
+          <p class="card-text">2021-2022
+            Argentina Programa - #YoProgramo</p>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-3">
+        <img src="./imagenes/argentinaprograma2.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Primera etapa del plan Argentina Programa</h5>
+          <p class="card-text">2021
+            Argentina Programa - #SeProgramar</p>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-3">
+        <img src="./imagenes/padre-monti.png" class="img-fluid rounded-start padre-monti">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Educacion Secundaria</h5>
+          <p class="card-text">2007-2011 Educacion Polimodal, Modalidad Economia y Gestion de las Organizaciones.</p>
+          <p>Escuela Part. Inc. Nro 3028 Padre Luis María Monti. Santa Fe, La Capital.</p>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-estudio" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-12">
+        <h2 class="card-title">Hard & Soft Skills</h2>
+        <div class="card-img-overlay">
+          <button id="btn-agregar-progreso" href="#" class="btn btn-secundary" type="button">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>HTML5</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/css3.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>CSS3</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>JAVASCRIPT</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/angularjs.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>ANGULAR</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/bootstrap.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>BOOTSTRAP</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped purple" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/ios/500/000000/mysql-logo.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>MYSQL</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-2" id="nombre-progreso">
+        <p><h2>JAVA</h2></p>
+      </div>
+      <div class="col-md-6">
+        <div class="progress">
+          <p><h4>100%</h4></p>
+          <div class="progress-bar progress-bar-striped blue" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card-body">
+          <div class="card-img-overlay">
+            <button id="btn-quitar-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="btn-edit-progreso" href="#" class="btn btn-secundary" type="button">
+              <i class="far fa-edit"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card w-100">
+    <div class="card-body">
+      <div class="col-md-12">
+        <h2 class="card-title">Proyectos</h2>
+        <div class="card-img-overlay">
+          <button id="btn-agregar-proyecto" href="#" class="btn btn-secundary" type="button">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="./imagenes/imagen-Portfolio.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Mi Portfolio</h5>
+            <p class="card-text">Pagina web la cual muestra informacion actualizada sobre mis estudios, cursos de programacion, habilidades aprendidas y proyectos. Desarrollado con HTML, CSS, JS, Angular.</p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="card-body">
+            <div class="card-img-overlay">
+              <button id="btn-quitar-proyecto" href="#" class="btn btn-secundary" type="button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button id="btn-edit-proyecto" href="#" class="btn btn-secundary" type="button">
+                <i class="far fa-edit"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="btn-link">
+          <a href="#" class="btn btn-dark">Ver Pagina Web</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script rel="javascript" href="archivo.js"></script>
+</body>
+</html>
