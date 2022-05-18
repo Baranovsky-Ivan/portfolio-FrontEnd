@@ -1,0 +1,21 @@
+{
+    "program": {
+        "name": "Argentina Programa",
+        "img": "../argprograma.jpg",
+        "url": "https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+    },
+    "title program": "#YoProgramo",
+    "redes": {
+        "instagram": "https://www.instagram.com/ivan.baranovsky/?hl=es-la",
+        "facebook": "https://www.facebook.com/ibaranovsky/",
+        "github": "https://github.com/Baranovsky-Ivan"
+    },
+    "backImage": "../software-banner.jpg",
+    "image": "../Foto-perfil 1.jpg",
+    "name": "Iván Baranovsky",
+    "position": "Full Stack Developer Jr",
+    "information": "Recientemente termine el curso YO PROGRAMO de ARGENTINA PROGRAMA en el cual hice mis primeros pasos en la programacion. En estos momentos estoy desarrollando mis habilidades de forma autodidacta. Tengo 27 años y vivo en la provincia de Santa Fe, Argentina.",
+    "Educacion": [{
+        
+    }
+}

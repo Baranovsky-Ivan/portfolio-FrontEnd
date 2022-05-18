@@ -10,6 +10,8 @@ import { AgregarQuitarComponent } from './componentes/plantillas/agregar-quitar/
 import { EstudiosComponent } from './componentes/plantillas/estudios/estudios.component';
 import { HardYSoftSkillsComponent } from './componentes/plantillas/hard-y-soft-skills/hard-y-soft-skills.component';
 import { ProyectosComponent } from './componentes/plantillas/proyectos/proyectos.component';
+import { PortfolioService } from './servicios/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ProyectosComponent } from './componentes/plantillas/proyectos/proyectos
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

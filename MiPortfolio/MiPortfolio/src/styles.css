@@ -74,19 +74,19 @@ img#image-profile{
     font-size: xx-large;
 }
 button#btn-info-resumida-agregar{
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     margin-right: 0.3rem;
 }
 button#btn-info-resumida-quitar{
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     margin-right: 0.3rem;
 }
 button#btn-eliminar-plantilla{
     margin-left: 0.3rem;
-    margin-block-end: -0.7rem;
+    margin-block-end: -0.8rem;
 }
 button#btn-agregar-plantilla{
-    margin-block-end: -0.7rem;
+    margin-block-end: -0.8rem;
 }
 .row.g-0 {
     padding: 1rem;
