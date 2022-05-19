@@ -98,9 +98,14 @@ img.img-fluid.rounded-start {
 .card-body {
     margin-top: 1rem;
 }
+ul{
+    list-style: none;
+}
+.list-info{
+    margin-top: 2rem;
+}
 button#btn-edit-estudio{
     margin-right: 0.3rem;
-    
 }
 img.img-fluid.rounded-start.padre-monti{
     height: 200px;

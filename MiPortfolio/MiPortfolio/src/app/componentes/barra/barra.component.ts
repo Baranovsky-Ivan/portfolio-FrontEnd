@@ -7,11 +7,14 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./barra.component.css']
 })
 export class BarraComponent implements OnInit {
-
+  programList: any;
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos();
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+      console.log(data);
+      this.programList=data.program;
+    });
   }
 
 }

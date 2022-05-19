@@ -10,8 +10,8 @@
   <div class="row row-cols-1 row-cols-md-2 g-3">
     <div class="col-md-5">
       <div class="card text-center bg-secondary">
-        <h1>Iván Baranovsky</h1>
-        <h3>Full Stack Developer Jr</h3>
+        <h1>{{about.name}}</h1>
+        <h3>{{about.position}}</h3>
         <div class="card-img-overlay">
           <button id="btn-edit-personal" href="#" class="btn btn-light" type="button">
             <i class="far fa-edit"></i>
@@ -20,21 +20,18 @@
       </div>
     </div> 
     <div class="col-md-7">
-        <div class="card text-left bg-secondary ">
-          <h2>Informacion resumida</h2>
-          <h5>Recientemente termine el curso "YO PROGRAMO" de "ARGENTINA PROGRAMA" en el cual hice mis primeros pasos en la programacion. 
-              En estos momentos estoy desarrollando mis habilidades de forma autodidacta. 
-          <p>Tengo 27 años y vivo en la provincia de Santa Fe, Argentina.</p></h5>
-        </div>
-        <div class="card-img-overlay">
-          <button id="btn-info-resumida-quitar" href="#" class="btn btn-light" type="button">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <button id="btn-info-resumida-agregar" href="#" class="btn btn-light" type="button">
-            <i class="far fa-edit"></i>
-          </button>
-        </div>
+      <div class="card text-left bg-secondary ">
+        <h2>Informacion resumida</h2>
+        <h5>{{about.info}}<p>{{about.edad}}</p></h5>
       </div>
-      
+      <div class="card-img-overlay">
+        <button id="btn-info-resumida-quitar" href="#" class="btn btn-light" type="button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="btn-info-resumida-agregar" href="#" class="btn btn-light" type="button">
+          <i class="far fa-edit"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
